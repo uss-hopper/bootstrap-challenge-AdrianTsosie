@@ -6,10 +6,6 @@ html, body {
     background-attachment: fixed;
 }
 
-img.logo {
-    position: center;
-}
-
 #myBtn {
     display: none;
     position: fixed;
@@ -22,7 +18,7 @@ img.logo {
     color: white;
     cursor: pointer;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 #myBtn:hover {
