@@ -3,18 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css">
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
         <title>Bootstrap Challenge</title>
     </head>
     <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         <div class="container">
-                <nav class="navbar navbar-expand-sm fixed-top mb-5 navbar-dark bg-dark">
-                    <a class="navbar-brand" href="#"></a>
-                        <img src="my-pixel-logo-light.png" class="ml-5 center" width="60" height="40" alt="My Pixel Logo">
+                <nav class="navbar navbar-expand-sm border border-primary fixed-top navbar-dark bg-dark">
+                    <a class="navbar-brand"  href="#"></a>
+                        <img src="my-pixel-logo-light.png" class="ml-5 center" width="60" height="40" alt="My Pixel Logo" id="Logo">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -26,7 +30,7 @@
                             <li class="nav-item ml-auto">
                                 <a class="nav-link" href="#Story">Story</a>
                             </li>
-                            <li class="nav-item ml-8">
+                            <li class="nav-item ml-auto">
                                 <a class="nav-link" href="#Samples">Samples</a>
                             </li>
                         </ul>
@@ -34,20 +38,20 @@
                 </nav>
         </div>
         <div class="container">
-            <div class="jumbotron rounded my-5 py-4 bg-secondary" id="Statement">
+            <div class="jumbotron rounded my-5 py-4 bg-dark text-white-50" id="Statement">
                 <h1 class="display-4 font-weight-bold">Illuminate the Shape.</h1>
                 <p class="lead ">In a world of ever changing art and technology we offer various Projection Mapping experiences
-                to fit your event. From simple projections to custom installations we can build to fit your needs. </p>
+                    to fit your event. From simple projections to custom installations we can build to fit your needs. </p>
                 <a class="btn btn-primary btn-lg" href="https://www.facebook.com/MyPixelNM/" role="button">Learn more</a>
             </div>
         </div>
-        <div class="container-fluid bg-secondary py-5">
+        <div class="container-fluid bg-dark text-white-50 py-5">
             <div class="container" id="Story">
                  <div class="row">
                         <div class="col-sm-2 my-auto py-auto">
                             <img src="my-pixel-square.jpg" class="rounded img-fluid mx-auto py-auto d-block" alt="My Pixel Square" />
                         </div>
-                        <div class="col-sm-10 border my-auto py-auto">
+                        <div class="col-sm-10 my-auto py-auto">
                             <p class="lead">This company started off as a way for me to added a visual flair to my events. Once the pictures
                                 and video hit social media I began to receive messages about me doing projection mapping for
                                 other people events. Now I build custom installations and tailor the visuals to match the event
@@ -57,30 +61,35 @@
                  </div>
             </div>
         </div>
-        <div class="container text-bold text-white" id="Samples">
+        <div class="container text-bold" id="Samples">
             <div class="row text-center my-5">
                 <div class="col-md-3 p-3">
-                    <img src="my-pixel-1b.jpg" class="rounded-circle border my-3" alt="My Pixel 1">
-                    <p class="border rounded text-wrap bg-secondary my-2 p-3">Here is my rig set up for a full mapping jobs.</p>
+                    <img src="my-pixel-1b.jpg" class="border border-primary rounded-circle my-3" alt="My Pixel 1">
+                    <p class="rounded text-wrap bg-dark text-white-50 my-2 p-3">Here is my rig set up for a full mapping jobs.</p>
                 </div>
                 <div class="col-md-3 p-3">
-                    <img src="my-pixel-2b.jpg" class="rounded-circle border my-3" alt="My Pixel 2">
-                    <p class="border rounded text-wrap bg-secondary my-2 p-3">Here is an example of Mapping and the use of TVs and another projector
+                    <img src="my-pixel-2b.jpg" class="border border-primary rounded-circle my-3" alt="My Pixel 2">
+                    <p class="rounded text-wrap bg-dark text-white-50 my-2 p-3">Here is an example of Mapping and the use of TVs and another projector
                     to give multiple displays</p>
                 </div>
                 <div class="col-md-3 p-3">
-                    <img src="my-pixel-3b.jpg" class="rounded-circle border my-3" alt="My Pixel 3">
-                    <p class="border rounded text-wrap bg-secondary my-2 p-3">This a one of many different install themes i can create.
+                    <img src="my-pixel-3b.jpg" class="border border-primary rounded-circle my-3" alt="My Pixel 3">
+                    <p class="rounded text-wrap bg-dark text-white-50 my-2 p-3">This a one of many different install themes i can create.
                         This was for a valentines day event..</p>
                 </div>
                 <div class="col-md-3  p-3">
-                    <img src="my-pixel-4b.jpg" class="rounded-circle border my-3" alt="My Pixel 4">
-                    <p class="border rounded text-wrap bg-secondary my-2 p-3">Here we have a full 3D mapped stage and DJ booth. Fully custom
+                    <img src="my-pixel-4b.jpg" class="border border-primary rounded-circle my-3" alt="My Pixel 4">
+                    <p class="rounded text-wrap bg-dark text-white-50 my-2 p-3">Here we have a full 3D mapped stage and DJ booth. Fully custom
                         for this one event..</p>
                 </div>
             </div>
         </div>
-        <div class="container-fluid bg-dark py-4 text-white-50">
+        <div class="your-centered-div">
+            <div class="embed-responsive-sm embed-responsive-16by9 my-4" id="sizer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lU2RJKjcIyc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark mt-5 py-4 text-white-50">
             <footer class="page-footer">
                 <div class="row">
                     <div class="col">
@@ -89,5 +98,25 @@
                 </div>
             </footer>
         </div>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
     </body>
 </html>
